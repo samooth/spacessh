@@ -34,7 +34,7 @@ spacessh -s ab01f... -u maf
 spacessh -s ab01f... -u maf -i keypair.json
 ```
 
-Read more about using identities here: https://github.com/prdn/hyper-cmd-docs/blob/main/identity.md
+Read more about using identities here: https://github.com/samooth/space-cmd-docs/blob/main/identity.md
 
 SSHFS (mount a remove fs/folder via ssh)
 
@@ -62,9 +62,9 @@ spacessh --rdp -s ...
 
 spacessh supports the space-cmd system!
 
-Identity management: https://github.com/prdn/hyper-cmd-docs/blob/main/identity.md
+Identity management: https://github.com/samooth/space-cmd-docs/blob/main/identity.md
 
-Host resolution: https://github.com/prdn/hyper-cmd-docs/blob/main/resolve.md
+Host resolution: https://github.com/samooth/space-cmd-docs/blob/main/resolve.md
 
 ## License
 
