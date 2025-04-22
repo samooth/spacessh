@@ -2,15 +2,15 @@
 
 const { spawn } = require('child_process')
 const os = require('os')
-const HyperDHT = require('hyperdht')
+const SpaceDHT = require('spacedht')
 const net = require('net')
 const argv = require('minimist')(process.argv.slice(2))
-const libNet = require('@hyper-cmd/lib-net')
-const libUtils = require('@hyper-cmd/lib-utils')
-const libKeys = require('@hyper-cmd/lib-keys')
+const libNet = require('space-cmd-lib-net')
+const libUtils = require('space-cmd-lib-utils')
+const libKeys = require('space-cmd-lib-keys')
 const connPiper = libNet.connPiper
 
-const helpMsg = 'Usage:\nhyperssh ?-i identity.json ?-s peer_key ?-u username ?-e ssh_command ?--rdp'
+const helpMsg = 'Usage:\nspacessh ?-i identity.json ?-s peer_key ?-u username ?-e ssh_command ?--rdp'
 
 if (argv.help) {
   console.log(helpMsg)
@@ -58,7 +58,7 @@ if (argv.i) {
 
 const username = argv.u || os.userInfo().username
 
-const dht = new HyperDHT({
+const dht = new SpaceDHT({
   keyPair
 })
 
